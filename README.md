@@ -15,6 +15,11 @@ GenerateVoxelisation.m
 The output of this file 
 
 ## 3) Optimisation:
-
+The main file for optimisation is:
+```
+SnakeRaven_Evolution_script.m
+```
+You can run this on a HPC or another powerful computer utilising a parpool.
+You can modify the settings for different task objectives
 
 ## 4) Results:
