@@ -1,5 +1,5 @@
 # DesignAlgorithm_SnakeRaven
-Automated design algorithms for end-to-end design optimisation of a patient-specific surgical manipulator considering dexterity, reachability and task-space obstacles. 
+Automated design algorithms for end-to-end design optimisation of a patient-specific surgical manipulator considering dexterity, reachability and task-space obstacles. Based on our publication "End-to-end design of a bespoke 3D printed dexterous snake-like surgical manipulator using an evolution algorithm"
 
 ## Prerequisites:
 You will need MATLAB and its parallel computing toolbox
