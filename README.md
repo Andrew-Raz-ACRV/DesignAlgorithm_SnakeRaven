@@ -33,7 +33,7 @@ The final overall results: Snake_Evolution_ResultsXX-XXX_XXXX_XX_XX_XX.mat
 Where XXX fills the date and time of the complete evolution. 
 It will also create a back up results file after each generation.
 
-## 4) Results:
+## 4) Plotting:
 You can now plot all the evolution results to get:
 - a design render
 - fitness over time
