@@ -46,3 +46,6 @@ see the example code for how to plot the results
 ```
 PlotEvolutionResultsSnake_Example.m
 ```
+
+## Patient Specific Design Process:
+![alt text](https://github.com/Andrew-Raz-ACRV/DesignAlgorithm_SnakeRaven/blob/main/Plotting/Patient_specific_Flowchart_pictures-2.jpg)
