@@ -1,6 +1,6 @@
 % Differential Evolution script
 % SnakeRaven Optimisation on HPC
-% Andrew Razjigaev 4 May 2020
+% Andrew Razjigaev 11 Feb 2021
 
 clc;
 clear;
@@ -275,6 +275,18 @@ for it=1:MaxIt
     % Show Iteration Information
     disp(['Iteration ' num2str(it) ' finished: Best Cost = ' num2str(-BestCost(it))]);
     disp('\n');
+    
+    %Saving backup data after a generation
+    cd(directory);
+    %Create Backup results file:
+    BackupResults = struct('BestSol',BestSol,...
+        'BestCost',BestCost,...
+        'Max_Iterations',it,...
+        'populations_history',cell2mat(Allpop),...
+        'costs_history',cell2mat(Allcost),...
+        'time_history',cell2mat(Alltime));
+    save('Snake_Evolution_Backup','-struct','BackupResults');
+    cd ..
 end
 
 %% Show Results
@@ -313,7 +325,7 @@ OptimResults = struct('BestSol',BestSol,...
 Evolution_file = strcat(directory,' Finished_ ',strrep(strrep(datestr(datetime),':','_'),' ','_'));
 
 %Save Evolutionresults until works:
-%Stupid Directory access failure retry save until works
+%if directory access failure retry save until works
 not_worked = true;
 cd(directory);
 while not_worked
