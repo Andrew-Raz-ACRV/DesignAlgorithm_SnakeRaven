@@ -5,7 +5,7 @@ Automated design algorithms for end-to-end design optimisation of a patient-spec
 You will need MATLAB and its parallel computing toolbox
 
 ## 1) Patient Scan
-You will need an stl file. The one we used can be downloaded through this link:
+You will need an stl file of the anatomy. The one we used can be downloaded through this link: https://www.dropbox.com/s/bmo72qa6k2d3a8v/kneemodel.stl?dl=0
 
 ## 2) Voxelisation
 You will need to run this file to generate the voxel map:
