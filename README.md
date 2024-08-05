@@ -77,6 +77,8 @@ You can check the status of all your jobs via your username:
 ```
 $ qstat -USERNAME
 ```
+You can also view the progress of the evolution script via the logfile created in the PBS script.
+This logfile will output Matlab's display text and tell you where the program is up to.
 You can abort the particular job using the job ID:
 ```
 $ qdel job_id
