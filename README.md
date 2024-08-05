@@ -33,8 +33,8 @@ The final overall results are saved as a file called: Snake_Evolution_ResultsXX-
 Where XXX fills in the date and time of the complete evolution. 
 It will also create a backup results file after each generation.
 
-The backup results can be used to continue executing the evolution algorithm if it fails remotely.
-You will need to edit it (so that it knows where the directory is) and then run the script:
+The backup results can be used to continue executing the evolution algorithm if it fails remotely or if you want to continue running it for longer.
+You will need to edit the Revive_Evolution.m script so that it knows where the directory is and then run it:
 ```
 Revive_Evolution.m
 ```
