@@ -41,8 +41,8 @@ Revive_Evolution.m
 
 ## Example of using this script on HPC in a PBS job system:
 
-To run the code on HPC you can create a .sh file and submit the job to the cluster. 
-Below is an example of a .sh file let's call it "a_pbs_job.sh" 
+To run the code on HPC you can create a .sh file and submit the job to the cluster.
+There is an example in the optimisation folder called "a_pbs_job.sh" 
 This script will open Matlab 2018b and run the evolution algorithm on HPC using 1 core, 12 parallel processors, 5GB of memory and an execution time limit of 200 hours.
 ```
 #!/bin/bash -l
@@ -63,7 +63,7 @@ module load matlab/2018b
 matlab -r SnakeRaven_Evolution_script -logfile logfile_SnakeRaven_Evolution_script.log -nodisplay -nodesktop -nosplash
 ```
 
-To execute it, log in to HPC and navigate to your directory.
+To execute it, log in to HPC and navigate to your directory which should contain everything inside the Optimisation folder of this repo.
 Edit the PBS script and for thoroughness ensure the text is compatible with Linux by running: 
 ```
 dos2unix a_pbs_job.sh
